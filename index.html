@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart Canvas - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌱 AgroSmart Canvas</div>
+        <nav>Projeto Agrinho 2026 - Conectando Campo e Tecnologia</nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="metrics-grid">
+            <div class="card" id="card-umidade">
+                <h3>Umidade do Solo</h3>
+                <div class="value" id="val-umidade">42%</div>
+                <p class="status alerta">Atenção: Solo seco</p>
+            </div>
+            <div class="card" id="card-temperatura">
+                <h3>Temperatura</h3>
+                <div class="value" id="val-temp">28.5°C</div>
+                <p class="status ideal">Ideal para o cultivo</p>
+            </div>
+            <div class="card" id="card-ph">
+                <h3>pH do Solo</h3>
+                <div class="value" id="val-ph">6.2</div>
+                <p class="status ideal">Neutro / Saudável</p>
+            </div>
+        </section>
+
+        <section class="control-panel">
+            <h2>Simulador de Irrigação Inteligente</h2>
+            <div class="controls">
+                <button onclick="acionarIrrigacao()" id="btn-irrigar">Ativar Irrigação Automatizada</button>
+                <button onclick="simularClima()" class="btn-secondary">Simular Chuva</button>
+            </div>
+            <div class="log-container">
+                <h3>Histórico de Eventos</h3>
+                <ul id="log-eventos">
+                    <li>[07:00] Sistema iniciado com foco em economia de água.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Concurso Agrinho 2026 | Sustentabilidade e Inovação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
